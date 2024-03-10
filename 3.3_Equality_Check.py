@@ -1,13 +1,18 @@
-num1 = int(input("Enter num1 "))
-num2 = int(input("Enter num2 "))
-num3 = int(input("Enter num3 "))
+student_grade = input("What is the grade of the student? ")
+extracurricular_activities = input("Is the student part of an extracurricular activity? ")
 
-if num1 == num2 and num1 == num3:
-    print("All numbers are equal")
+if student_grade == "A":
+    if extracurricular_activities == "Sport":
+        print("The Student Will Get 20% Discount")
+    else:
+        print("The Student Will Get 10% Discount")
 
-elif num1 == num2: 
-    print("Two numbers are equal and the largest is", num3)
-elif num1 == num3:
-        print("Two numbers are equal and the largest is", num2)
-elif num2 == num3:
-     print("Two numbers are equal and the largest is", num2)
+elif student_grade == "B":
+    if extracurricular_activities == "Drama":
+        print("The Student Will Get 15%")
+    else:
+        print("The Students Will Not Recieve A Discount")
+        
+        
+
+
